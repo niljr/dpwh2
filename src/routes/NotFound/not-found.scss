@@ -1,0 +1,16 @@
+
+@import 'styles/_variables';
+@import 'styles/_mixins';
+
+.not-found {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        width: 435px;
+        padding: $spacing;
+    }
+}

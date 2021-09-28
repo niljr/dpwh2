@@ -1,0 +1,69 @@
+@import '_variables';
+
+#root {
+    height: 100%;
+}
+
+#outer-container {
+    height: 100%;
+    // background: rgba(203, 203, 210, 0.15);
+    overflow: hidden;
+}
+
+#page-wrap {
+    position: relative;
+    z-index: 0;
+    contain: layout;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1.5rem 1.75rem;
+    height: 100%;
+}
+
+.safari-fix #page-wrap {
+    position: fixed;
+    overflow: hidden;
+    -webkit-overflow-scrolling: auto;
+}
+
+.loading-container {
+    margin-top: $spacing-double;
+}
+
+.no-transition,
+.no-transition * {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+.top-spacing {
+    margin-top: $spacing;
+}
+
+.top-spacing-double {
+    margin-top: $spacing-double;
+}
+
+.top-spacing-third {
+    margin-top: $spacing-third;
+}
+
+.top-spacing-half {
+    margin-top: $spacing-half;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-spaced {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content {
+    border: none;
+}
